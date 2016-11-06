@@ -7,26 +7,31 @@ group :assets do
   gem 'uglifier', '~> 2.4.0'
 end
 
-# group :production do
-#   git "git@github.com:regisbruggheman/gko_cms3.git", :tag => "v0.8.30" do
-#     gem 'gko_core'
-#     gem "gko_auth"
-#     gem "gko_documents"
-#     gem "gko_inquiries"
-#     gem "gko_categories"
-#     gem "gko_stickers"
-#     gem "gko_portfolio"
-#     gem "gko_testimonials"
-#   end
-# end
+gem 'bcrypt', '= 3.1.10'
+gem 'mysql2', '= 0.3.20'
+gem 'term-ansicolor', '= 1.3.2'
+gem 'rmagick', '= 2.15.4'
 
-group :development do
- gem "gko_core", :path => '~/Github/gko_cms3/gko_core'
- gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'
- gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
- gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
- gem "gko_categories", :path => '~/Github/gko_cms3/gko_categories'
- gem "gko_stickers", :path => '~/Github/gko_cms3/gko_stickers'
- gem "gko_portfolio", :path => '~/Github/gko_cms3/gko_portfolio'
- gem "gko_testimonials", :path => '~/Github/gko_cms3/gko_testimonials'
+group :production do
+  git "git@github.com:regisbruggheman/gko_cms3.git" do #, :tag => "v0.8.30" do
+    gem 'gko_core'
+    gem "gko_auth"
+    gem "gko_documents"
+    gem "gko_inquiries"
+    gem "gko_categories"
+    gem "gko_stickers"
+    gem "gko_portfolio"
+    gem "gko_testimonials"
+  end
 end
+
+# group :development do
+#  gem "gko_core", :path => '~/Github/gko_cms3/gko_core'
+#  gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'
+#  gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
+#  gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
+#  gem "gko_categories", :path => '~/Github/gko_cms3/gko_categories'
+#  gem "gko_stickers", :path => '~/Github/gko_cms3/gko_stickers'
+#  gem "gko_portfolio", :path => '~/Github/gko_cms3/gko_portfolio'
+#  gem "gko_testimonials", :path => '~/Github/gko_cms3/gko_testimonials'
+# end
