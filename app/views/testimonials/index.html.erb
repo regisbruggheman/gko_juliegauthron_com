@@ -1,0 +1,20 @@
+<%# collection_cache(parent) do %>
+<div class="page-header">
+  <%= render_page_title(parent.title) %>
+  <%= content_tag :p, :class => "lead" do %>
+    <% raw parent.body %>
+  <% end if parent.body.present? %>
+</div>
+<div class="container">
+  <div class="row testimonials">
+  <% collection.each do |item| %>                           
+    <article class="col-sm-12 item">
+      <h2 class="post-title"><i class="fa fa-quote-left"></i> <%= link_to(item.author, item.public_url) %></h2>
+      <%= content_tag :div, :class => "company" do %>
+        <% raw item.company %>
+      <% end if item.company.present? %>
+    </article>
+  <% end %>
+  </div> 
+</div>
+<%# end %>
