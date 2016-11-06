@@ -170,13 +170,6 @@ body.off-canvas-open {
   font-size: 16px;
 }
 
-.container.home {
-  @include clearfix;
-  margin: $navbar-height 0 0 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 /* PAGE HEADER
 -------------------------------------------------- */
 .page-header {
