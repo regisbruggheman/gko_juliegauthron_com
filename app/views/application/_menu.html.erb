@@ -1,8 +1,8 @@
-<%# cache([ I18n.locale, site, site.home, 'primary_menu' ]) do %> 
+<%# cache([ I18n.locale, site, site.home, 'primary_menu' ]) do %>
 <nav id="primary-menu" class="primary-menu-container">
   <ul class="nav nav-menu <%= menu_name if local_assigns.key?(:menu_name) %>">
     <% site.primary_menu.each do |section| %>
-      <% if section %> 
+      <% if section %>
       <%
         li_classes = []
         li_classes << "active" if !section.is_a?(Redirect) and active_paths.include?(section.public_url)
@@ -17,6 +17,12 @@
     <li id="contact">
       <%= mail_to "julie.gauthron@exquise-esquisse.com", "Contact", :encode => :javascript, :subject => "Contact juliegauthron.com" %>
     </li>
+    <li><%= link_to "https://www.facebook.com/exquiseesquisse72", :target => :blank, :alt => "Facebook" do %>
+      <i class="icon ion-social-facebook"></i>
+    <% end %></li>
+    <li><%= link_to "https://www.instagram.com/juliegauthron/", :target => :blank, :alt => "Instagram" do %>
+      <i class="icon ion-social-instagram"></i>
+    <% end %></li>
   </ul>
 </nav>
 <%# end %>

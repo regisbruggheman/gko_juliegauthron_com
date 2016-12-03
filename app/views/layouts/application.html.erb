@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
 <%= render 'head' %>
-<body class="home">
- <div id="page-wrapper">
-    <%= render 'navbar' %>
-    <%= yield %>
-  </div>
-  <div class="alert alert-danger alert-dismissible text-center fade in" role="alert"
-  style="position: fixed; bottom: 0; width: 100%; margin-bottom: 0; display: block; background-color:#da5c53;">
-  <a href="http://exquise-esquisse.com" target='blank' style="color:#fff;">Découvrez le travail de décoration d'intérieur de J. Gauthron sur exquise-esquisse</a>
-</div>
+<body>
+  <div id="page-wrapper">
+     <%= render 'navbar' %>
+     <div id="content-wrapper"><%= yield %></div>
+   </div>
   <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>

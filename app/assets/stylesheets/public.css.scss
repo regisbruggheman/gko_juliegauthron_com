@@ -1,5 +1,5 @@
 $theme-color: #1201ff;
-$navbar-height-breakpoint: 78px;
+$navbar-height-breakpoint: 112px;
 
 @import "theme/variables";
 @import "bootstrap.3.3.5/bootstrap";
@@ -82,9 +82,19 @@ a, button {
 -------------------------------------------------- */
 
 #page-wrapper {
-  //min-height: 100%;
   position: relative;
   min-height: 100%;
+}
+#content-wrapper {
+  position: relative;
+  min-height: 100%;
+  margin-top: $navbar-height;
+  @media (min-width: $grid-float-breakpoint) {
+    margin-top: $navbar-height-breakpoint;
+  }
+}
+.copy-text {
+  color: $theme-color;
 }
 
 /* VIDEO
@@ -110,7 +120,7 @@ $off-canvas-width: 100.5%;
 #categories-off-canvas {
   position: fixed;
   z-index: $zindex-navbar-fixed - 2;
-  top: $navbar-height;
+  top: $navbar-height + 20;
   left: 0;
   height: 100%;
   box-sizing: content-box;
@@ -126,7 +136,7 @@ $off-canvas-width: 100.5%;
   @include backface-visibility(hidden);
 
   @media (min-width: $grid-float-breakpoint) {
-    top: 82px;
+    top: 82px + 20;
     height: auto;
     background-color: transparent;
     @include translate(0, 0);
@@ -174,11 +184,10 @@ body.off-canvas-open {
 -------------------------------------------------- */
 .page-header {
   @include clearfix;
-  margin: $navbar-height 0 0 0;
+  //margin: $navbar-height 0 0 0;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 0;
-  background-color: #dadbd8;
   @media (min-width: $grid-float-breakpoint) {
     margin-top: 78px;
   }

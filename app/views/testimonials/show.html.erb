@@ -2,9 +2,9 @@
   <%= render_page_title(resource.title) %>
 </div>
 <div class="container">
-  <div class="row">                        
+  <div class="row">
     <article class="col-sm-12 testimonial">
-      <%= content_tag :p, :class => "lead" do %>
+      <%= content_tag :p, :class => "copy-text" do %>
         <% raw resource.body %>
       <% end if resource.body.present? %>
       <%= content_tag :div, :class => "meta-author" do %>
@@ -14,5 +14,5 @@
         <% raw resource.company %>
       <% end if resource.company.present? %>
     </article>
-  </div> 
+  </div>
 </div>

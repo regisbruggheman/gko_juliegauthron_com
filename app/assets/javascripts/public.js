@@ -12,7 +12,7 @@ window.console || (console = {
 
 window.THEME || (THEME = {
   filterState: "all",
-  mode: "video"
+  mode: "project"
 });
 
 jQuery(function($) {
@@ -117,14 +117,15 @@ jQuery(function($) {
     }
 
     if(THEME.mode == "video") {
-      projectsTop = Math.round( $("#player").height() + navbarHeight );
+      projectsTop = Math.round( $("#player").height() );
     }
     else {
       projectsTop = Math.round( $project.outerHeight(true) + navbarHeight );
     }
 
+    //$projects.css({ "min-height": THEME.getScreenHeight() });
     $projects.css({ 'margin-top': projectsTop, "min-height": THEME.getScreenHeight() });
-    $('.container.home').css({ 'margin-top': projectsTop, "min-height": THEME.getScreenHeight() });
+    //$('.container.home').css({ 'margin-top': projectsTop, "min-height": THEME.getScreenHeight() });
   };
 
   /*==================================================

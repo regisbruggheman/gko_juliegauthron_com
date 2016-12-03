@@ -3,14 +3,14 @@
   //margin-top: 100%;
   position: relative;
   min-height: 100%;
-  margin-top: 68%;
+  //margin-top: 68%;
   border-top: 6px solid $theme-color;
   background-image:  url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc3JyBoZWlnaHQ9JzE0JyB2aWV3Qm94PScwIDAgNSAxMCc+Cgk8cmVjdCB3aWR0aD0nMTEwJScgeD0nLTUlJyB5PSctNSUnIGhlaWdodD0nMTEwJScgZmlsbD0nI2RhZGJkOCcvPgoJPGxpbmUgeDE9Jy0yJyB5MT0nMScgeDI9JzcnIHkyPScxMCcgc3Ryb2tlPScjMTIwMWZmJyBzdHJva2Utd2lkdGg9JzAuNCcvPgoJPGxpbmUgeDE9Jy0yJyB5MT0nNicgeDI9JzcnIHkyPScxNScgc3Ryb2tlPScjMTIwMWZmJyBzdHJva2Utd2lkdGg9JzAuNCcvPgoJPGxpbmUgeDE9Jy0yJyB5MT0nLTQnIHgyPSc3JyB5Mj0nNScgc3Ryb2tlPScjMTIwMWZmJyBzdHJva2Utd2lkdGg9JzAuNCcvPgo8L3N2Zz4=');
 }
 
 
 .projects {
-  margin-top: $line-height-computed;
+  //margin-top: $line-height-computed;
 }
 
 .thumbnail {
@@ -33,7 +33,7 @@
   @media (max-width: $screen-xs-max) {
     @include text-overflow();
   }
-  
+
   @media (min-width: $grid-float-breakpoint) {
     font-size: 38px;
   }
@@ -99,7 +99,7 @@
         right: 0;
       }
     }
-    
+
     &.active,
     &:hover {
       .thumbnail-heading {
@@ -184,7 +184,7 @@
     color: #fff;
     background-color: $brand-primary;
   }
-  
+
   padding: 8px;
   &.right {
     background-image: none;
@@ -201,7 +201,7 @@
     outline: none;
     text-decoration: none;
   }
-  
+
   @media (min-width: $screen-sm-min) {
     padding: 0;
     &:hover,

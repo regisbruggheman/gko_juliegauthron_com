@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 .navbar {
   border: 0;
-  
+
   .nav > li > a {
     text-transform: uppercase;
     font-weight: 700;
@@ -12,39 +12,18 @@
     &:hover {
       border-color: $theme-color;
       background-color: transparent;
-    } 
+    }
   }
-  
+
   @media (min-width: $grid-float-breakpoint) {
     min-height: $navbar-height-breakpoint;
   }
 }
 
 .navbar-nav {
-  
   @media (min-width: $grid-float-breakpoint) {
-    margin-right: 70px;
     margin-top: ((($navbar-height-breakpoint - $line-height-computed) / 2) / 2);
     margin-bottom: ((($navbar-height-breakpoint - $line-height-computed) / 2) / 2);
-  }
-}  
-
-$theFacebookHeight: 34px;
-#facebook {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  right: 15px;
-  top: (($navbar-height - $theFacebookHeight) / 2);
-  bottom: (($navbar-height - $theFacebookHeight) / 2);
-  height: $theFacebookHeight;
-  width: $theFacebookHeight;
-  vertical-align: middle;
-  font-size: 28px;
-  line-height: $theFacebookHeight;
-  @media (min-width: $grid-float-breakpoint) {
-    top: (($navbar-height-breakpoint - $theFacebookHeight) / 2);
-    bottom: (($navbar-height-breakpoint - $theFacebookHeight) / 2);
   }
 }
 
@@ -77,7 +56,7 @@ $theFacebookHeight: 34px;
       background-color: $theme-color;
     }
   }
-  
+
   @media (min-width: $grid-float-breakpoint) {
     span {
       border-bottom: none;
@@ -91,7 +70,6 @@ $theFacebookHeight: 34px;
 }
 
 .navbar-toggle {
-  margin-right: 70px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -128,7 +106,7 @@ $theFacebookHeight: 34px;
   .nav {
     float: right;
   }
-  .nav > li > a { 
+  .nav > li > a {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
